@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: DM Sans, sans-serif;
+}
+
+
+
+/* HEADER SECTION */
+
+header {
+    /* border: 2px solid red; */
+}
+
+.wide-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+
+    /* border: 2px solid blue; */
+}
+
+.wide-nav .logo img {
+    display: block;
+    width: 61px;
+    max-width: 100%;
+    height: 53px;
+}
+
+.wide-nav nav {
+    width: 40%;
+    /* border: 1px solid purple; */
+    padding: 0;
+}
+
+.wide-nav nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid yellow; */
+    padding: 0;
+}
+
+.wide-nav nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: #514949;
+    cursor: pointer;
+}
+
+.wide-nav nav ul .register-button {
+    background: #E7332B;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: .5rem 1rem;
+    color: #ffffff;
+    transition: all .5s ease-in-out;
+}
+
+.wide-nav nav ul .register-button:hover {
+    color: #E7332B;
+    background: #FFFFFF;
+    border: 2px solid #E7332B;
+}
+
+.wide-nav nav ul .login-button {
+    background: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: .5rem 1rem;
+    color: #E7332B;
+    transition: all .5s ease-in-out;
+}
+
+.wide-nav nav ul .login-button:hover {
+    color: #FFFFFF;
+    background: #E7332B;
+    border: 2px solid #E7332B;
+}
+
+.wide-nav .hamburger {
+    display: none;
+}
+
+.wide-nav .hamburger img {
+    display: inline-block;
+    width: 50px;
+    max-width: 100%;
+}
+
+header .small-nav {
+    display: none;
+    border: 1px solid red;
+}
+
+
+/* REGISTRATION FORM */
+
+section.form {
+    display: flex;
+    padding: 1rem 0 1rem 2rem;
+}
+
+section.form .form-register {
+    flex-basis: 50%;
+}
+
+section.form .form-register form span,
+section.form .form-register form input,
+section.form .form-register form select {
+    display: block;
+}
+
+section.form .form-register form h1 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 47px;
+    color: #514949;
+    margin-top: 3rem;
+    margin-bottom: .5rem;
+}
+
+section.form .form-register form p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: rgba(231, 51, 43, 0.7);
+    margin-bottom: 2rem;
+}
+
+section.form .form-register form span {
+    font-size: 30px;
+    line-height: 39px;
+    color: #9E9D9D;
+}
+
+section.form .form-register form input,
+section.form .form-register form select {
+    background: #FFFFFF;
+    border: 2px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 6px;
+    width: 523px;
+    height: 60px;
+    margin-bottom: 2rem;
+    font-size: 30px;
+    line-height: 39px;
+    color: #9E9D9D;
+}
+
+section.form .form-register form select {
+    margin-top: 3rem;
+}
+
+section.form .form-register form .register-button {
+    background: #E7332B;
+    border: 2px solid #E7332B;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: .5rem 1rem;
+    color: #ffffff;
+    width: 523px;
+    height: 60px;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(231, 51, 43, 0.25);
+    cursor: pointer;
+    margin-top: 3rem;
+    font-size: 36px;
+    transition: all .5s ease-in-out;
+}
+
+section.form .form-register form .register-button:hover {
+    color: #E7332B;
+    background: #FFFFFF;
+    border: 2px solid #E7332B;
+}
+
+section.form .form-image {
+    display: flex;
+    justify-content: flex-end;
+    flex-basis: 50%;
+}
+
+section.form .form-image img {
+    display: block;
+    width: 600px;
+    max-width: 100%;
+}
